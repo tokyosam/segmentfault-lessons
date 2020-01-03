@@ -407,5 +407,10 @@ sf.user.name = xiaomage
 
 #### 调整配置服务器配置信息：`segmentfault-prod.properties`
 
+#总结
+先加载默认的配置文件，如果加载配置方案的话，相同的属性名会被覆盖掉。本地覆盖外部数据源的需要添加这三个配置，只能在外部数据源添加这三个配置，否则无效
+allowOverride: true
+overrideNone: true
+overrideSystemProperties: false
 
 
